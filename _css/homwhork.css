@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../_images/bg_waterpier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: arial;
+}
+.all_site{
+    max-width:900px;
+    background: rgba(255, 255, 255, 0.4);
+    margin:0 auto;
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+header{
+    width:100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.4);
+    margin:0 auto;
+    height:150px;
+    text-align: center;
+    margin-bottom: 120px;
+    
+    
+    
+}
+a{
+    list-style: none;
+     text-decoration: none;
+    color: black;
+}
+header .logo{
+width: 30px;
+float: left;
+text-align: left;
+margin-left: 25px;
+
+}
+.box{
+    width: 31%;
+    float: left;
+    border: 1px solid black;
+    padding: 8px;
+    margin: 5px;
+}
+nav{
+    width:100%;
+}
+.box img {
+    width: 100%;
+    
+}
+nav .burger{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    z-index:98;
+    padding: 25px;
+    margin: 25px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: central;
+    text-align: center;
+    float: right;
+    border-right: 1px solid #CCC; 
+    border-left: 1px solid #CCC; 
+    font-size:x-large;
+    font-style: italic;
+    font-weight: bold;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: orange;
+}
+footer{
+    background: rgba(255, 255, 255, 0.4);
+    width:100%;
+    margin:0 auto;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: central;    
+    margin-top: 20px;
+    
+}
+#close_btn{
+    color:orange;
+    float: right;
+    float: top;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+
+    }
+    .box{
+        width:47%;
+    }
+    nav .burger{
+        display:block;
+        float: right;
+    }
+    nav ul{
+        display:none;
+        position: absolute;
+        backgroun-color: gray;
+        top:60px;
+        width: 50%;
+        background: rgba(255, 255, 255, 0.4);
+    }
+    nav ul li{
+        display: block;
+        text-align:center;
+        
+    }
+    .all_site{
+        width:90%;
+        background:gold;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+
+    }
+    .all_site{
+        width:90%;
+        background:green;
+    }
+    .box{
+        width:100%;
+    }
+    nav .burger{
+        display:block;
+    }
+    nav ul{
+        display:none;
+        position: absolute;
+        backgroun-color: gray;
+        top:60px;
+        width: 50%;
+        background: rgba(255, 255, 255, 0.4);
+    }
+    nav ul li{
+        display: block;
+        text-align:center;
+        
+    }
+}
